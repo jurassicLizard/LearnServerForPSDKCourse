@@ -6,16 +6,12 @@
  * consequences. Use at your own risk.
  */
 
-package com.triassic.systems.ps.dk.ng.gs.testserver;
+package com.triassic.systems.ps.dk.ng.gs.testserver.exceptions;
 
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
+public class ProductNotFoundException extends RuntimeException{
 
-@SpringBootApplication
-public class TestServerPsdkAngularCourseApplication {
-
-	public static void main(String[] args) {
-		SpringApplication.run(TestServerPsdkAngularCourseApplication.class, args);
-	}
-
+    public ProductNotFoundException(Long id)
+    {
+        super("No Product with id : " + id + " in repository");
+    }
 }
