@@ -8,17 +8,17 @@ instead of the method used by the course which just reads from a local file cont
 # API Requests
 it provides a simple server that responds to the following requests 
 
-`
+```
 GET http://localhost:8080/api/products
 
-`
+```
 
 And
 
-`
+```
 GET http://localhost:8080/api/products/5
 
-`
+```
 With 5 used as an example quering the product with id 5 in the simple database
 
 
@@ -31,22 +31,24 @@ With 5 used as an example quering the product with id 5 in the simple database
 # Build 
 
 
-`sh
+```sh
 ./gradlew bootJar 
 
-`
+```
 
 For windows replace gradlew with gradlew.bat
 
 
 # Run
 
-`sh
+```sh
 cd $PROJECTROOT/build/libs
 java -jar TestServerPSDKAngularCourse.jar
-#if you port 8080 is already used please add --server.port=<port> as argument to the execution command
+
+#if the port 8080 is already used on your machine please add --server.port=<port> as argument to the execution command
 #replacing <port> with your port of choice
-`
+#$PROJECTROOT is the directory where this Readme.md resides
+```
 
 
 
