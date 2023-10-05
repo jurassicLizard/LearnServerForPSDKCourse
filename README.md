@@ -1,10 +1,11 @@
 # General
 
-I wrote this software based on the tutorial under https://spring.io/guides/tutorials/rest/ .
+I wrote this very simple software based on the tutorial under https://spring.io/guides/tutorials/rest/ .
 It was meant to complement my Learning Experience for An Angular - Getting Started - Course in Pluralsights.com
 The aim was to provide a simple server with an Simple In-Memory Database to respond to GET requests and give back a list of products
 in JSON Format from the in-memory Database. 
-This is instead of the method used by the course which just reads from a local file containing the json contents.
+This is instead of the method used by the course which just reads from a local file containing the json contents. This may prove valuable
+since mimicking a server-client communication helps make the learning experience more complete
 
 ## API Requests
 it provides a simple server that responds to the following requests 
